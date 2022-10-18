@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --brancoPrincipal: #FFFFFF;
+    --cinzaSecundario: #C0C0C0;
+    --cinzaDescricao: #F9F9F9;
+    --botaoAzul: #167BF7;
+    --corFundo: #00030C;
+    --fontePrincipal: 'Inter';
+}
+
+body {
+    background-color: var(--corFundo);
+    color: var(--brancoPrincipal);
+    font-family: var(--fontePrincipal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.principal {
+    background-image: url("../img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.containerCaixa {
+    margin: 0 6em; /* top-botom right-left */
+}
+
+.containerTitulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.containerImg {
+    margin: 1em 0 2em 0; /* top right botom left */
+}
+
+.containerBotao {
+    background-color: var(--botaoAzul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--brancoPrincipal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.containerBotao:hover {
+    background-color: #5a9ff3;
+    transition: 2s all;
+}
+
+.boataoSecundario {
+    background-color: transparent;
+    border: 2px solid var(--brancoPrincipal);
+}
+
+.containerAviso {
+    font-size: 12px;
+    color: var(--cinzaSecundario);
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.containerDescricao {
+    padding: 2em;
+}
+
+.secundarioImg {
+    width: 80%;
+}
+
+.descricaoTitulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--brancoPrincipal);
+    margin: 0.1em;
+}
+
+.descricaoTexto {
+    color: var(--cinzaSecundario);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivoTitulo {
+    font-size: 48px;
+    color: var(--brancoPrincipal);
+}
+
+.dispositivoLista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none; /* remove o . da <ul>, há vários estilos de list para usar */
+    margin: 5em 0;
+}
+
+.listaItem {
+    font-size: 32px;
+    color: var(--brancoPrincipal);
+}
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodapeLogo {
+    margin: 1em;
+}
+
+.rodapeLista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 1em;
+}
+
+.listaLink a{
+    text-decoration: none;
+    color: var(--brancoPrincipal);
+    margin-left: 1em;
+}
+
+.listaLink a:hover {
+    color: var(--botaoAzul);
+} 
+
+.rodapeTexto {
+    font-size: 14px;
+    color: var(--cinzaSecundario);
+    margin: 2em;
+}
